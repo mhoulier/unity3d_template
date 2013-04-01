@@ -165,5 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac877691d3e0a14a9e907c1d9b29f7e, type: 3}
   m_Name: 
   m_GameManagerPrefab: {fileID: 100000, guid: 250331a4973def04f9bd7e3cb8c2c82d, type: 2}
+  m_FirstLevelSceneFileName: level_01
   m_FirstLevelSceneIndex: 2
+  m_CreditSceneFileName: credits
   m_CreditSceneIndex: 6

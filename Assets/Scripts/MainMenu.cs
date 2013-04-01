@@ -12,7 +12,10 @@ public class MainMenu : MonoBehaviour
 	
 	private int m_NextLevelIndex = -1;
 	
+	public string m_FirstLevelSceneFileName = "";
 	public int m_FirstLevelSceneIndex = 0;
+	
+	public string m_CreditSceneFileName = "";
 	public int m_CreditSceneIndex = 0;
 	
 	private int m_currentPanelIndex = 0;
