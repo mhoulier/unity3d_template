@@ -18,12 +18,12 @@ public class MainMenu : MonoBehaviour
 	public string m_CreditSceneFileName = "";
 	public int m_CreditSceneIndex = 0;
 	
-	private int m_currentPanelIndex = 0;
-	
 	private bool m_enableUI = false;
 	private bool IsUIEnable() { return m_enableUI; }
 	private void EnableUI() { m_enableUI = true; }
 	private void DisableUI() { m_enableUI = false; }
+	
+	private int m_currentPanelIndex = 0;	//TODO: move current panel index to menu panel container
 	
 	void Start()
 	{
@@ -157,10 +157,12 @@ public class MainMenu : MonoBehaviour
 				
 				GUI.Box(mainPanel, "\n<b>Your Game</b>\n\nLet's Play!");
 				
+				int mainPanelHeaderHeight = 160;
+				
 				int mainPanelButtonWidth = 160;
 				int mainPanelButtonHeight = 40;
 				int mainPanelButtonOffsetX = mainPanelOffsetX + (panelWidth - mainPanelButtonWidth) / 2;
-				int mainPanelButtonOffsetY = mainPanelOffsetY + 160;
+				int mainPanelButtonOffsetY = mainPanelOffsetY + mainPanelHeaderHeight;
 				int mainPanelButtonInterspaceY = 60;
 				
 				string createGameButtonLabel = "Play Game";
