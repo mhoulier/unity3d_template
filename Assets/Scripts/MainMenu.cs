@@ -25,6 +25,10 @@ public class MainMenu : MonoBehaviour
 	
 	private int m_currentPanelIndex = 0;	//TODO: move current panel index to menu panel container
 	
+	void OnLevelWasLoaded(int _level)
+	{
+	}
+	
 	void Start()
 	{
 		StartSequence();
@@ -33,10 +37,6 @@ public class MainMenu : MonoBehaviour
 		{
 			EnableUI();
 		}
-	}
-	
-	void OnLevelWasLoaded(int _level)
-	{
 	}
 	
 	void StartSequence()

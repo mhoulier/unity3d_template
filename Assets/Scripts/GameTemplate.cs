@@ -72,7 +72,7 @@ public class GameTemplate : MonoBehaviour
 	void InitCamera()
 	{
 		Camera mainCamera = Camera.main;
-		mainCamera.orthographic = true;
+		mainCamera.orthographic = false;
 	}
 	
 	void Update()
@@ -170,7 +170,7 @@ public class GameTemplate : MonoBehaviour
 	{
 		ChangeGameState(GameState.E_GamePlaying);
 		
-		GameObject playerInstance = null;//TODO: find player game object instance
+		GameObject playerInstance = m_PlayerInstance;
 		
 		if (playerInstance != null)
 		{
@@ -213,7 +213,7 @@ public class GameTemplate : MonoBehaviour
 		Camera mainCamera = Camera.main;
 		GameCamera gameCamera = mainCamera.gameObject.GetComponent<GameCamera>();
 		
-		GameObject playerInstance = null;//TODO: find player game object instance
+		GameObject playerInstance = m_PlayerInstance;
 		if (playerInstance != null)
 		{
 			gameCamera.SetFollowTarget(playerInstance.transform);
